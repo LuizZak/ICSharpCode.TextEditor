@@ -58,4 +58,7 @@
 	<Mode file       = "XML-Mode.xshd"
 	      name       = "XML"
 	      extensions = ".xml;.xsl;.xslt;.xsd;.xhtml;.manifest;.config;.addin;.xshd;.wxs;.wxi;.wxl;.proj;.csproj;.vbproj;.vcproj;.vcxproj;.ilproj;.booproj;.build;.xfrm;.targets;.xaml;.xpt;.xft;.map;.wsdl;.disco"/>
+	<Mode file       = "ZHS-Mode.xshd"
+	      name       = "ZHS"
+	      extensions = ".zhs"/>
 </SyntaxModes>

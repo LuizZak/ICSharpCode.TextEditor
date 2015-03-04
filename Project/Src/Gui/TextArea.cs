@@ -483,6 +483,7 @@ namespace ICSharpCode.TextEditor
 		
 		protected override void OnPaintBackground(System.Windows.Forms.PaintEventArgs pevent)
 		{
+            
 		}
 		
 		protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
@@ -775,6 +776,8 @@ namespace ICSharpCode.TextEditor
 			
 			// I prefer to set NOT the standard column, if you type something
 //			++Caret.DesiredColumn;
+            // ^ Well, you know nothing, john snow!
+            SetDesiredColumn();
 		}
 		
 		/// <remarks>

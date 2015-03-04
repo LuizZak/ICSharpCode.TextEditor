@@ -53,7 +53,7 @@ namespace ICSharpCode.TextEditor.Gui.CompletionWindow
 		}
 		
 		public int GetRequiredLeftHandSideWidth(Point p) {
-			if (description != null && description.Length > 0) {
+			if (!string.IsNullOrEmpty(description)) {
 				using (Graphics g = CreateGraphics()) {
 					Size s = TipPainterTools.GetLeftHandSideDrawingSizeHelpTipFromCombinedDescription(this, g, Font, null, description, p);
 					return s.Width;
@@ -108,7 +108,7 @@ namespace ICSharpCode.TextEditor.Gui.CompletionWindow
 		
 		protected override void OnPaint(PaintEventArgs pe)
 		{
-			if (description != null && description.Length > 0) {
+			if (!string.IsNullOrEmpty(description)) {
 				if (fixedWidth) {
 					TipPainterTools.DrawFixedWidthHelpTipFromCombinedDescription(this, pe.Graphics, Font, null, description);
 				} else {

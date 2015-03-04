@@ -50,7 +50,7 @@ namespace ICSharpCode.TextEditor
 		
 		public bool IsEmpty {
 			get {
-				return x <= 0 && y <= 0;
+				return x < 0 && y < 0;
 			}
 		}
 		

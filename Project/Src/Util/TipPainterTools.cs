@@ -295,7 +295,7 @@ namespace ICSharpCode.TextEditor.Util
 		
 		static bool IsVisibleText(string text)
 		{
-			return text != null && text.Length > 0;
+			return !string.IsNullOrEmpty(text);
 		}
 	}
 }
