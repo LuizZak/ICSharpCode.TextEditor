@@ -79,7 +79,10 @@ namespace ICSharpCode.TextEditor
 				e.ShowToolTip(sb.ToString());
 				return;
 			}
-			
+
+		    if (!e.InDocument)
+		        return;
+
 			List<TextMarker> markers = textArea.Document.MarkerStrategy.GetMarkers(e.LogicalPosition);
 			foreach (TextMarker tm in markers) {
 				if (tm.ToolTip != null) {
